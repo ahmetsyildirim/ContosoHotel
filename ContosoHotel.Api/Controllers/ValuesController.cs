@@ -21,7 +21,7 @@ namespace ContosoHotel.Api.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            return "value" + DateTime.Now.ToString();
         }
 
         // POST api/values
